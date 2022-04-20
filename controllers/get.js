@@ -8,7 +8,8 @@ exports.getStudent = (req, res) => {
 }
 
 exports.getCompany = (req, res) => {
-    posts = Company.find().select("_id Name")
+    posts = Company.find().select()
+
         .then(posts => {
             res.json({ posts })
         })

@@ -7,7 +7,9 @@ const compUpload = require('../middleware/compUpload')
 const uploadCv = require('../middleware/uploadCv')
 
 
-router.get('/', getController.getStudent)
+router.get('/', (req,res)=>{
+    res.send("hii...")
+})
 router.get('/getStudents', getController.getStudent)
 router.get('/getComp', getController.getCompany)
 router.get('/getJob', getController.getJobs)
